@@ -88,7 +88,18 @@ php artisan db:seed
 
 ```
 ## ER図
-![alt](ER.png)
+
+contacts
+
+| カラム名 | 型 | 備考 |
+|---------|----|------|
+| id | bigint | 主キー |
+| name | varchar | 名前 |
+| email | varchar | メールアドレス |
+| tell | varchar | 電話番号 |
+| content | text | お問い合わせ内容 |
+| created_at | timestamp | 作成日時 |
+| updated_at | timestamp | 更新日時 |
 
 ## テーブル設計書
 カラム名	型	Primary key	Unique key	Not null	Foreign key	説明
