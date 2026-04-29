@@ -90,12 +90,13 @@ php artisan db:seed
 ## ER図
 ![alt](ER.png)
 
-## テーブル設計書
-カラム名	型	Primary key	Unique key	Not null	Foreign key	説明
-id	unsigned bigint	○		○		主キー
-name	varchar(255)			○		名前
-email	varchar(255)			○		メールアドレス
-tell	varchar(11)			○		電話番号
-content	text					お問い合わせ内容
-created_at	timestamp					レコード作成時刻
-updated_at	timestamp					レコード更新時刻
+## テーブル設計
+| カラム名 | 型 | PRIMARY KEY | UNIQUE | NOT NULL | FOREIGN KEY | 説明 |
+|----------|----|-------------|--------|----------|--------------|------|
+| id | unsigned bigint | ○ |  | ○ |  | 主キー |
+| name | varchar(255) |  |  | ○ |  | 名前 |
+| email | varchar(255) |  |  | ○ |  | メールアドレス |
+| tell | varchar(11) |  |  | ○ |  | 電話番号 |
+| content | text |  |  |  |  | お問い合わせ内容 |
+| created_at | timestamp |  |  |  |  | レコード作成時刻 |
+| updated_at | timestamp |  |  |  |  | レコード更新時刻 |
