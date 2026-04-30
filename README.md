@@ -1,5 +1,3 @@
-# laravel-docker-template
-
 ## アプリケーション名
 お問い合わせフォームアプリ
 
@@ -16,9 +14,9 @@
 - お問い合わせ一覧表示（ログインユーザーのみ）
 
 ## 使用技術
-- Laravel
-- PHP
-- MySQL
+- Laravel 8.83.8
+- PHP 8.1
+- MySQL 8.0
 - Docker
 
 ## 画面構成
