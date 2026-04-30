@@ -44,4 +44,14 @@ class ContactController extends Controller
         // 完了ページを表示
         return view('thanks');
     }
+
+    // お問い合わせ一覧の表示
+    public function admin()
+    {
+        // contactsテーブルのデータを新しい順で取得
+        $contacts = Contact::orderBy('created_at', 'desc')->get();
+
+        // admin.blade.phpにデータを渡す
+        return view('admin', compact('contacts'));
+    }
 }
